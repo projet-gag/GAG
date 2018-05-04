@@ -1,0 +1,22 @@
+/*header*/
+
+#header{
+background-color: #404040 ;
+}
+#header .links ul li a{
+color : #dddddd ;
+}
+#header h1 a{
+color : #dddddd ;
+}
+
+/*Logo sidebar*/
+#intro .logo:before{
+background-image: none;
+}
+#intro .logo{
+width : 40%;
+}
+#intro .logo img{
+width: 100%;
+}
