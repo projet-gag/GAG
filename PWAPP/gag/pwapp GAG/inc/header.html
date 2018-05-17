@@ -1,0 +1,78 @@
+ <!-- Header -->
+<html>
+<head>
+<!--[if !IE]> <-->
+<style type="text/CSS">
+#menu li ul {
+ position:absolute;
+ }
+</style>
+<!--><![endif]-->
+<!--[if IE 8]>-->
+<style type="text/CSS">
+#menu li ul {
+ position:absolute;
+ }
+</style>
+<!--><![endif]--> 
+<link rel="stylesheet" href="#CHEMIN{assets/css/custom.css}" />
+      </head>
+    <header id="header">
+	    <h1><a href="#URL_SITE_SPIP">mon site</a></h1>
+	    <nav class="links">	    
+		    <ul>
+		    <BOUCLEmct(MOTS){id_groupe=1}>
+			    <li><a href="#URL_MOT">#TITRE</a></li>
+		    </BOUCLEmct>
+		    </ul>
+	    </nav>
+	    <nav class="main">
+		    <ul>
+			    <li class="search">
+				    <a class="fa-search" href="#search">Search</a>
+				    <form id="search" method="get" action="#">
+					    <input type="text" name="query" placeholder="Search" />
+				    </form>
+			    </li>
+			    <li class="login">
+				  <a class="links" href="#login">login</a>
+			    </li>
+		    </ul>
+	    </nav>
+	    <!-- Header -->
+	    
+	    				<header id="header">
+						 
+					    
+					      <a class="logoposition" href="?page=sommaire">#LOGO_SITE_SPIP</a>
+						 
+					      
+						<nav class="links">
+							<ul>
+							      <li><a href="?page=login0">Inscription/Connexion</a></li>
+							      <BOUCLErub2(RUBRIQUES){id_rubrique=2}>
+							 <li><a href="?page=presentation">#TITRE</a></li>
+								</BOUCLErub2>
+									    <BOUCLErub11(RUBRIQUES){id_rubrique=11}>
+							 <li><a href="?page=humour-noir">#TITRE</a></li>
+								</BOUCLErub11>
+								<BOUCLErub12(RUBRIQUES){id_rubrique=12}>
+								<li><a href="?page=geek">#TITRE</a></li>
+								</BOUCLErub12>
+								<BOUCLErub13(RUBRIQUES){id_rubrique=13}>
+								<li><a href="?page=animaux">#TITRE</a></li>
+								</BOUCLErub13>
+								<BOUCLErub14(RUBRIQUES){id_rubrique=14}>
+								<li><a href="?page=travail">#TITRE</a></li>
+								</BOUCLErub14>
+								<BOUCLErub15(RUBRIQUES){id_rubrique=15}>
+								<li><a href="?page=chute">#TITRE</a></li>
+								</BOUCLErub15>
+								<BOUCLErub16(RUBRIQUES){id_rubrique=16}>
+								<li><a href="?page=roi-des-cons">#TITRE</a></li>
+								</BOUCLErub16>
+							</ul>
+						</nav>
+						
+					</header>
+    </header>
