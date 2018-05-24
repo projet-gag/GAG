@@ -1,17 +1,16 @@
 <?php
-require_once '../inc/connect-db.php';
-//extends Zend_Controller_Action
-class IndexController 
+
+class IndexController extends Zend_Controller_Action
 {
 
     public function init()
     {
-
+        /* Initialize action controller here */
     }
 
     public function indexAction()
-    {  
-		
+    {
+        // action body
     }
 
 
