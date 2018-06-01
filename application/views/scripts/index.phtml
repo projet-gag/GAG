@@ -1,0 +1,25 @@
+ <!-- application/views/scripts/index.phtml -->
+     
+    <p><a href="<?php echo $this->url(
+        array(
+            'controller' => 'utilisateur',
+            'action'     => 'sign'
+        ),
+        'default',
+        true) ?>">Êtes-vous un utilisateur</a></p>
+     
+    Utilisateur: <br />
+    <dl>
+        <?php foreach ($this->entries as $entry): ?>
+        <dt><?php echo $this->escape($entry->utilisateurs_nom) ?></dt>
+        <dd><?php echo $this->escape($entry->utilisateurs_prenom) ?></dd>
+        <dt><?php echo $this->escape($entry->utilisateurs_photo) ?></dt>
+        <dt><?php echo $this->escape($entry->utilisateurs_adresse) ?></dt>
+        <dt><?php echo $this->escape($entry->utilisateurs_codepostale) ?></dt>
+        <dd><?php echo $this->escape($entry->utilisateurs_ville) ?></dd>
+        <dt><?php echo $this->escape($entry->utilisateurs_telephone) ?></dt>
+        <dd><?php echo $this->escape($entry->utilisateurs_portable) ?></dd>
+        <dt><?php echo $this->escape($entry->utilisateurs_date_added) ?></dt>
+        <dd><?php echo $this->escape($entry->utilisateurs_last_date_modified) ?></dd>
+        <?php endforeach ?>
+    </dl>
