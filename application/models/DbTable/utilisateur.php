@@ -12,19 +12,6 @@ class Model_DbTable_utilisateur extends Zend_Db_Table_Abstract
      * Clef primaire de la table.
      */
     protected $_primary = 'id';
-	protected $_dependentTables = array(
-		'Model_DbTable_Flux_Rapport'
-		);
-		
-    /**
-     * Vérifie si une entrée flux_doc existe.
-     *
-     * @param array $data
-     *
-     * @return integer
-     */
-   
-    
     /**
      * Récupère toutes les entrées flux_doc avec certains critères
      * de tri, intervalles
