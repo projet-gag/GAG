@@ -34,12 +34,3 @@ class Model_DbTable_utilisateur extends Zend_Db_Table_Abstract
         return $this->fetchAll($query)->toArray();
     }
     
-    
-=======
-<?php
-class Application_Model_DbTable_Utilisateurs extends Zend_Db_Table_Abstract
-{
-    /** Table name */
-    protected $_name    = 'utilisateurs';
-
-}
