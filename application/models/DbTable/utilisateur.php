@@ -33,4 +33,4 @@ class Model_DbTable_utilisateur extends Zend_Db_Table_Abstract
         }
         return $this->fetchAll($query)->toArray();
     }
-    
+}
