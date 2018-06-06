@@ -23,7 +23,7 @@ class Application_Model_UtilisateurMapper
     public function save(Application_Model_Projet $projet)
     {
         $data = array(
-            'name'   => $Utilisateur->getName(),
+            'nom'   => $Utilisateur->getNom(),
             'mdp' => $Utilisateur->getMdp(),
             'pseudo' => $Utilisateur->getPseudo(),
             'age' => $Utilisateur->getAge(),
@@ -43,7 +43,7 @@ class Application_Model_UtilisateurMapper
         }
         $row = $result->current();
         $Utilisateur->setId($row->id)
-        ->setName($row->name)
+        ->setNom($row->nom)
         ->setMdp($row->mdp)
         ->setPseudo($row->pseudo)
         ->setAge($row->age);
@@ -55,7 +55,7 @@ class Application_Model_UtilisateurMapper
         foreach ($resultSet as $row) {
             $entry = new Application_Model_Projet();
             $entry->setId($row->id)
-            ->setName($row->name)
+            ->setNom($row->nom)
             ->setMdp($row->mdp)
             ->setPseudo($row->pseudo)
             ->setAge($row->age);

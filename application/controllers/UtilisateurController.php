@@ -14,8 +14,17 @@ class UtilisateurController extends Zend_Controller_Action
     }
     public function ecrireAction()
     {
-        $dbD = new Model_DbTable_utilisateur();
-        $dbD->ajouter(array("nom_util"=>$this->_getParam('nom_util', 'rien')));
+         $request = $this->getRequest();
+         $form    = new Application_Forms_Utilisateur();
+        /*if ($this->getRequest()->isPost()) {
+            if ($form->isValid($request->getPost())) {
+                $titre = new Application_Model_Utilisateur($form->getValues());
+                $mapper  = new Application_Model_UtilisateurMapper();
+                $mapper->save($titre);
+                return $this->_helper->redirector('index');
+            }
+        }
+        $this->view->form = $form;*/
     }
     
     

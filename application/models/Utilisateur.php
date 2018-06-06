@@ -2,10 +2,10 @@
 
 class Application_Model_Utilisateur
 {
-    protected $_name;
+    protected $_nom;
     protected $_mdp;
     protected $_pseudo;
-    protected $_ageName
+    protected $_age
     protected $_id;
 
     public function __construct(array $options = null)
@@ -45,15 +45,15 @@ class Application_Model_Utilisateur
         return $this;
     }
 
-    public function setName($name)
+    public function setNom($nom)
     {
-        $this->_name = (string) $name
+        $this->_nom = (string) $nom
         return $this;
     }
 
-    public function getName()
+    public function getNom()
     {
-        return $this->_name;
+        return $this->_nom;
     }
 
     public function setMdp($mdp)
